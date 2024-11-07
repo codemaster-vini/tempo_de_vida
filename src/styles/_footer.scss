@@ -1,0 +1,19 @@
+footer{
+    background-color: rgba(15, 67, 163, 0.897);
+    padding: 20px;
+    margin-top: 24px;
+
+    .container{
+        max-width: 900px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+
+        a{
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

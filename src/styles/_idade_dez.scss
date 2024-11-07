@@ -1,0 +1,51 @@
+.idade_dez{
+    padding-top: 10vh;
+
+    .container{
+        max-width: 900px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .invertido{
+        flex-direction: row-reverse;
+    }
+
+    &__title{
+        margin-bottom: 24px;
+        color: #000;
+    }
+
+    &__text{
+        color: #000;
+    }
+
+    &__image{
+        max-width: 400px;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 5.4vw;
+
+        .container{
+            display: block;
+        }
+
+        &__image{
+            max-width: 100%;
+            margin-top: 24px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        padding: 5.6vw;
+
+        &__image{
+            max-width: 300px;
+        }
+    }
+}

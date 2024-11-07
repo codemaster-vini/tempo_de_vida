@@ -1,0 +1,137 @@
+.hero{
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+    padding: 5.6vw 0;
+
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.808);
+        content: '';
+    }
+
+    &__branding{
+        max-width: 50px;
+    }
+
+    .container{
+        position: relative;
+        max-width: 900px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__title{
+        color: #fff;
+        padding: 24px 0 8px;
+    }
+
+    &__timer{
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    .linha{
+        max-width: 300px;
+        margin: 16px auto 0;
+    }
+
+    h2{
+        margin-top: 24px;
+    }
+
+    &__menu{
+        display: block;
+        max-width: 307px;
+        margin: 16px auto 0;
+
+        &--item{
+            font-size: 24px;
+            display: flex;
+            gap: 10px;
+            max-width: max-content;
+
+            &-span{
+                width: 135px;
+                text-align: right;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        min-height: 100vh;
+        background-size: cover;
+
+        &__title{
+            font-size: 24px;
+        }
+
+        &__timer{
+            font-size: 24px;
+        }
+
+        hr{
+            display: none;
+        }
+
+        h2{
+            margin-top: 100px;
+        }
+
+        &__menu{
+            margin-top: 32px;
+            &--item{
+                gap: 20px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+
+        &__branding{
+            max-width: 120px;
+        }
+
+        &__title{
+            font-size: 48px;
+        }
+
+        &__timer{
+            font-size: 40px;
+        }
+
+        .linha{
+            max-width: 450px;
+            margin: 40px auto;
+        }
+
+        h2{
+            font-size: 40px;
+            margin-top: 120px;
+        }
+
+        &__menu{
+            margin-top: 60px;
+            &--item{
+                font-size: 30px;
+                gap: 20px;
+                width: 100px;
+                span{
+                    width: 300px;
+                    text-align: right;
+                }
+
+                p{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
